@@ -15,7 +15,7 @@ let rta = confirm("Desea calcular sus gastos fijos mensuales? \n SI = ACEPTAR --
     let gas = 0;
     let celular = 0;
     let seguroAuto = 0;
-    let sueldoTotal = 80000;
+    let sueldoTotal = 0;
 
 while ( rta == true){
      obraSocial = parseInt(prompt("Ingresar monto de obra social"));
@@ -23,6 +23,7 @@ while ( rta == true){
      gas = parseInt(prompt("Ingresar monto del gas"));
      celular = parseInt(prompt("Ingresar monto de la factura de celular"));
      seguroAuto = parseInt(prompt("Ingresar monto del seguro del auto"));
+     sueldoTotal = parseInt(prompt("Ingresar el total del sueldo de este mes"));
 
 
      if ( isNaN(obraSocial) || isNaN(luz) || isNaN(gas) || isNaN(celular) || isNaN(seguroAuto)){
